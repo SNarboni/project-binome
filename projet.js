@@ -64,80 +64,80 @@ function turnRight(rover) {
 }
 
 function moveForward(rover) {
-    var lastX = rover.x;
-    var lastY = rover.y;
+    var lX = rover.x;
+    var lY = rover.y;
 
     if (rover.direction === "N") {
         rover.y -= 1;
         if (rover.y < 0 || rover.y > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     } else if (rover.direction === "S") {
         rover.y += 1;
         if (rover.y < 0 || rover.y > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     } else if (rover.direction === "E") {
         rover.x += 1;
         if (rover.x < 0 || rover.x > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     } else if (rover.direction === "O") {
         rover.x -= 1;
         if (rover.x < 9 || rover.x > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     }
     console.log(rover);
 }
 
 function moveBackward(rover) {
-    var lastX = rover.x;
-    var lastY = rover.y;
+    var lX = rover.x;
+    var lY = rover.y;
 
     if (rover.direction === "N") {
         rover.y += 1;
         if (rover.y < 0 || rover.y > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     } else if (rover.direction === "S") {
         rover.y -= 1;
         if (rover.y < 0 || rover.y > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     } else if (rover.direction === "E") {
         rover.x -= 1;
         if (rover.x < 0 || rover.x > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     } else if (rover.direction === "O") {
         rover.x += 1;
         if (rover.x < 9 || rover.x > 9) {
             console.log("je peux pas");
         } else {
-            grid[rover.y][rover.x] = grid[lastY][lastX];
-            grid[lastY][lastX] = " ";
+            grid[rover.y][rover.x] = grid[lY][lX];
+            grid[lY][lX] = " ";
         }
     }
     console.log(rover);
