@@ -99,13 +99,13 @@ function moveBackward(rover) {
         if (rover.x === 0) {
             console.log("je peux pas");
         } else {
-            rover.x += 1;
+            rover.x -= 1;
         }
     } else if (rover.direction === "O") {
         if (rover.x === 9) {
             console.log("je peux pas");
         } else {
-            rover.x -= 1;
+            rover.x += 1;
         }
     }
     console.log(rover);
